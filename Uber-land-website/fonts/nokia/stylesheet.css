@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Nokia Sans S60';
+    src: url('NokiaSansS60.eot');
+    src: url('NokiaSansS60.eot?#iefix') format('embedded-opentype'),
+        url('NokiaSansS60.woff2') format('woff2'),
+        url('NokiaSansS60.woff') format('woff'),
+        url('NokiaSansS60.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
