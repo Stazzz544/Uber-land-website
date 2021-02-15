@@ -2,35 +2,21 @@
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: "Roboto", sans-serif;
-  font-style: 400px;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
-:focus,
-:active {
+a:focus, a:active {
   outline: none;
 }
 
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
+nav, footer, header, aside {
   display: block;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -41,9 +27,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
   font-family: inherit;
 }
 
@@ -59,8 +43,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -76,14 +59,13 @@ img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
-  font-weight: inherit;
+  font-weight: 400;
+}
+
+* {
+  font-family: Roboto, sans-serif;
 }
 
 header nav {
@@ -196,9 +178,10 @@ header nav {
   border-radius: 5px;
 }
 
-section .promo {
+.promo {
   position: relative;
   padding-bottom: 130px;
+  min-height: 100vh;
 }
 
 .promo__backround-flex {
@@ -226,7 +209,7 @@ section .promo {
 }
 
 .promo__header {
-  margin-top: 136px;
+  margin-top: 200px;
   text-align: center;
   font-size: 60px;
   font-weight: 900;
@@ -241,15 +224,20 @@ section .promo {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  margin-top: 10px;
 }
 
 .promo__text {
-  margin-top: 23px;
+  margin-top: 83px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+}
+
+.more {
+  margin-top: 30px;
 }
 
 .promo__button {
@@ -265,6 +253,15 @@ section .promo {
   line-height: 68px;
   text-transform: uppercase;
   color: #ffffff;
+  border-radius: 5px;
+}
+
+.adventeges {
+  padding-top: 71px;
+  padding-bottom: 68px;
+}
+.adventeges__info-block {
+  margin-top: 20px;
 }
 
 .black-button {

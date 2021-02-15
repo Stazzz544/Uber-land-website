@@ -1,27 +1,19 @@
+
 * 
 	padding: 0 
 	margin: 0 
 	border: 0 
-	font-family: 'Roboto', sans-serif 
-	font-style: 400px 
-*,
-*:before,
-*:after 
+*,*:before,*:after 
+	-moz-box-sizing: border-box 
 	-webkit-box-sizing: border-box 
 	box-sizing: border-box 
-:focus,
-:active 
+// :focus,:active 
+// 	outline: none 
+a:focus,a:active 
 	outline: none 
-a:focus,
-a:active 
-	outline: none 
-nav,
-footer,
-header,
-aside 
+nav,footer,header,aside 
 	display: block 
-html,
-body 
+html,body 
 	height: 100% 
 	width: 100% 
 	font-size: 100% 
@@ -30,9 +22,7 @@ body
 	-ms-text-size-adjust: 100% 
 	-moz-text-size-adjust: 100% 
 	-webkit-text-size-adjust: 100% 
-input,
-button,
-textarea 
+input,button,textarea 
 	font-family: inherit 
 input 
 	&::-ms-clear 
@@ -42,8 +32,7 @@ button
 	&::-moz-focus-inner 
 		padding: 0 
 		border: 0 
-a,
-a:visited 
+a, a:visited 
 	text-decoration: none 
 a 
 	&:hover 
@@ -53,16 +42,13 @@ ul
 		list-style: none 
 img 
 	vertical-align: top 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 
+h1,h2,h3,h4,h5,h6 
 	font-size: inherit 
-	font-weight: inherit 
-
+	font-weight: 400 
 //Обнуляющий стиль
+
+*
+	font-family: Roboto, sans-serif
 
 header 
 	nav 
@@ -163,10 +149,10 @@ header
 
 //Promo 
 
-section 
-	.promo 
+.promo 
 		position: relative 
 		padding-bottom: 130px 
+		min-height: 100vh
 
 .promo__backround-flex 
 	display: flex 
@@ -190,7 +176,7 @@ section
 	position: relative 
 
 .promo__header 
-	margin-top: 136px 
+	margin-top: 200px 
 	text-align: center 
 	font-size: 60px 
 	font-weight: 900 
@@ -204,14 +190,18 @@ section
 	text-transform: uppercase 
 	color: #ffffff 
 	text-align: center 
+	margin-top: 10px
 
 .promo__text 
-	margin-top: 23px 
+	margin-top: 83px 
 	font-size: 18px 
 	line-height: 24px 
 	font-weight: 400 
 	color: #ffffff 
 	text-align: center 
+
+.more
+	margin-top: 30px
 
 .promo__button 
 	margin-top: 116px 
@@ -225,15 +215,17 @@ section
 		line-height: 68px 
 		text-transform: uppercase 
 		color: #ffffff 
+		border-radius: 5px
 
 
 
 //adventeges 
 
-	section 
-		.adventeges 
-			padding-top: 71px 
-			padding-bottom: 68px 
+.adventeges 
+	padding-top: 71px 
+	padding-bottom: 68px 
+	&__info-block
+		margin-top: 20px
 
 .black-button 
 	text-align: center 
@@ -254,6 +246,7 @@ section
 	font-weight: 700 
 	text-transform: uppercase 
 	color: #222222 
+
 
 .adventeges__flex 
 	margin-top: 6px 
@@ -287,3 +280,7 @@ section
 		font-weight: 300 
 		line-height: 21px 
 		color: #202020 
+
+
+
+
