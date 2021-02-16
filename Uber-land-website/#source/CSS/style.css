@@ -64,6 +64,36 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.black-button {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  width: 112px;
+  height: 24px;
+  margin: 0 auto;
+  line-height: 23px;
+}
+
+.black-subtitle {
+  margin-top: 38px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.black-subtitle-mini {
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #222222;
+  text-align: center;
+}
+
 * {
   font-family: Roboto, sans-serif;
 }
@@ -261,36 +291,13 @@ header nav {
   padding-bottom: 68px;
 }
 .adventeges__info-block {
-  margin-top: 20px;
-}
-
-.black-button {
-  text-align: center;
-  font-size: 11px;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #000000;
-  width: 112px;
-  height: 24px;
-  margin: 0 auto;
-  line-height: 23px;
-}
-
-.black-subtitle {
-  margin-top: 25px;
-  text-align: center;
-  font-size: 38px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #222222;
+  margin-top: 40px;
 }
 
 .adventeges__flex {
   margin-top: 6px;
   margin-left: 25px;
   display: flex;
-  align-items: center;
 }
 
 .adventeges__flex-img {
@@ -301,10 +308,6 @@ header nav {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-}
-.adventeges__flex-img img {
-  width: 80px;
-  height: 66px;
 }
 
 .adventeges__flex-text {
@@ -323,4 +326,60 @@ header nav {
   font-weight: 300;
   line-height: 21px;
   color: #202020;
+}
+
+.mobile {
+  padding: 48px 0px 80px 0px;
+  min-height: 864px;
+  background: url("../img/bacground/bg_net.png") 0 0 repeat;
+}
+.mobile .row {
+  margin-top: 32px;
+}
+.mobile__item {
+  padding-top: 91px;
+  padding-bottom: 25px;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile__item_1 {
+  background: url("../img/galery-pic/phone1.png") 0 0 no-repeat;
+}
+.mobile__item_2 {
+  background: url("../img/galery-pic/phone2.png") 0 0 no-repeat;
+}
+.mobile__item_3 {
+  background: url("../img/galery-pic/phone3.png") 0 0 no-repeat;
+}
+.mobile__item_4 {
+  background: url("../img/galery-pic/phone4.png") 0 0 no-repeat;
+}
+.mobile__item_5 {
+  background: url("../img/galery-pic/phone5.png") 0 0 no-repeat;
+}
+.mobile__item_6 {
+  background: url("../img/galery-pic/phone6.png") 0 0 no-repeat;
+}
+.mobile__item-subtitle {
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+.mobile__item-plus {
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.mobile__item-plus img {
+  width: 100%;
+  padding: 6px;
 }

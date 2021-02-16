@@ -5,7 +5,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -66,6 +65,36 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.black-button {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  width: 112px;
+  height: 24px;
+  margin: 0 auto;
+  line-height: 23px;
+}
+
+.black-subtitle {
+  margin-top: 38px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.black-subtitle-mini {
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #222222;
+  text-align: center;
+}
+
 * {
   font-family: Roboto, sans-serif;
 }
@@ -73,26 +102,14 @@ h1, h2, h3, h4, h5, h6 {
 header nav {
   height: 51px;
   background-color: #212121;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
 }
 
 .menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 0;
   padding-left: 0;
   padding: 0 61px;
@@ -129,14 +146,8 @@ header nav {
 
 .subheader__flex {
   margin-top: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .subheader__flex span {
@@ -193,19 +204,14 @@ header nav {
 }
 
 .subheader__button a button {
-  -webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
   width: 173px;
   height: 48px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
-  background-image: -webkit-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
-  background-image: -o-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
   background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 
 .promo {
@@ -215,9 +221,6 @@ header nav {
 }
 
 .promo__backround-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 100%;
@@ -231,18 +234,14 @@ header nav {
 .promo__backround-flex img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .promo__flex-image {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 100%;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
   position: relative;
 }
 
@@ -286,18 +285,13 @@ header nav {
 .promo__button button {
   width: 265px;
   height: 69px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
-  background-image: -webkit-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
-  background-image: -o-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
   background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
-  -webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
   font-size: 18px;
   line-height: 68px;
   text-transform: uppercase;
   color: #ffffff;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 
 .adventeges {
@@ -306,70 +300,23 @@ header nav {
 }
 
 .adventeges__info-block {
-  margin-top: 20px;
-}
-
-.black-button {
-  text-align: center;
-  font-size: 11px;
-  font-weight: 100;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #000000;
-  width: 112px;
-  height: 24px;
-  margin: 0 auto;
-  line-height: 23px;
-}
-
-.black-subtitle {
-  margin-top: 25px;
-  text-align: center;
-  font-size: 38px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #222222;
+  margin-top: 40px;
 }
 
 .adventeges__flex {
   margin-top: 6px;
   margin-left: 25px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .adventeges__flex-img {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 113px;
-      -ms-flex: 0 0 113px;
-          flex: 0 0 113px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  flex: 0 0 113px;
   display: flex;
   height: 113px;
   background-color: #1eacc7;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.adventeges__flex-img img {
-  width: 80px;
-  height: 66px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .adventeges__flex-text {
@@ -390,4 +337,71 @@ header nav {
   font-weight: 300;
   line-height: 21px;
   color: #202020;
+}
+
+.mobile {
+  padding: 48px 0px 80px 0px;
+  min-height: 864px;
+  background: url("../img/bacground/bg_net.png") 0 0 repeat;
+}
+
+.mobile .row {
+  margin-top: 32px;
+}
+
+.mobile__item {
+  padding-top: 91px;
+  padding-bottom: 25px;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile__item_1 {
+  background: url("../img/galery-pic/phone1.png") 0 0 no-repeat;
+}
+
+.mobile__item_2 {
+  background: url("../img/galery-pic/phone2.png") 0 0 no-repeat;
+}
+
+.mobile__item_3 {
+  background: url("../img/galery-pic/phone3.png") 0 0 no-repeat;
+}
+
+.mobile__item_4 {
+  background: url("../img/galery-pic/phone4.png") 0 0 no-repeat;
+}
+
+.mobile__item_5 {
+  background: url("../img/galery-pic/phone5.png") 0 0 no-repeat;
+}
+
+.mobile__item_6 {
+  background: url("../img/galery-pic/phone6.png") 0 0 no-repeat;
+}
+
+.mobile__item-subtitle {
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mobile__item-plus {
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.mobile__item-plus img {
+  width: 100%;
+  padding: 6px;
 }
