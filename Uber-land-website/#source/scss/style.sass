@@ -1,10 +1,709 @@
 
-*
-	font-family: Roboto, sans-serif
+* 
+	padding: 0 
+	margin: 0 
+	border: 0 
+*,*:before,*:after 
+	-moz-box-sizing: border-box 
+	-webkit-box-sizing: border-box 
+	box-sizing: border-box 
+// :focus,:active 
+// 	outline: none 
+a:focus,a:active 
+	outline: none 
+nav,footer,header,aside 
+	display: block 
+html,body 
+	height: 100% 
+	width: 100% 
+	font-size: 100% 
+	line-height: 1 
+	font-size: 14px 
+	-ms-text-size-adjust: 100% 
+	-moz-text-size-adjust: 100% 
+	-webkit-text-size-adjust: 100% 
+input,button,textarea 
+	font-family: inherit 
+input 
+	&::-ms-clear 
+		display: none 
+button 
+	cursor: pointer 
+	&::-moz-focus-inner 
+		padding: 0 
+		border: 0 
+a, a:visited 
+	text-decoration: none 
+a 
+	&:hover 
+		text-decoration: none 
+ul 
+	li 
+		list-style: none 
+img 
+	vertical-align: top 
+h1,h2,h3,h4,h5,h6 
+	font-size: inherit 
+	font-weight: 400 
+//Обнуляющий стиль
 
-@import "null-style"
-@import "mixins"
-@import "re-usible-classes"
-@import "variables"
-@import "general"
-@import "media"
+=btn_hover
+	&:hover
+		transition: all 1s
+		background-image: none
+		background-color: $main-clr
+
+$main-clr: #872fa7
+$second-clr: #ff5656
+
+// Чёрная кнопка
+.black-button 
+	text-align: center 
+	font-size: 11px 
+	font-weight: 100 
+	text-transform: uppercase 
+	color: #ffffff 
+	background-color: #000000 
+	width: 112px 
+	height: 24px 
+	margin: 0 auto 
+	line-height: 23px 
+
+// Чёрный большой заголовок
+.black-subtitle 
+	margin-top: 38px 
+	text-align: center 
+	font-size: 38px 
+	font-weight: 700 
+	text-transform: uppercase 
+	color: #222222 
+
+	
+// Чёрный маленький загоовок
+
+.black-subtitle-mini
+	margin-top: 19px
+	font-size: 17px
+	font-weight: 400
+	color: #222222
+	text-align: center
+
+
+
+header 
+	nav 
+		height: 51px 
+		background-color: #212121 
+		display: flex 
+		align-items: center 
+		width: 100% 
+		position: fixed
+		z-index: 100
+		
+
+.menu 
+	display: flex 
+	justify-content: space-between 
+	margin-bottom: 0 
+	padding-left: 0 
+	padding: 0 61px 
+
+
+.menu-item 
+	padding: 10px 0px 
+	border-right: 2px dotted rgb(68, 67, 67) 
+	padding-right: 32px
+	&:last-child 
+		border-right: none 
+		padding-right: 0px 
+
+.menu-link 
+	font-size: 15px 
+	font-weight: 300 
+	color: #ffffff 
+	text-decoration: none 
+	&:hover 
+		color: #ffffff 
+
+.subheader 
+	padding-top: 50px
+	z-index: 2
+	background-color: rgba(0, 0, 0, 0.6) 
+	min-height: 85px 
+	position: absolute 
+	width: 100% 
+
+.subheader__flex 
+	margin-top: 16px 
+	display: flex 
+	align-items: center 
+	span 
+		padding-left: 10px 
+
+.subheader__logo 
+	display: inline-block 
+
+.subheader__logo-place 
+	padding: 0px 
+	span 
+		display: inline-block 
+		font-family: Nokia-Sans-S60 
+		font-size: 26px 
+		text-transform: uppercase 
+		letter-spacing: 0.045em 
+		color: #ffffff 
+
+.subheader__oficial 
+	opacity: 0.5 
+	font-size: 13px 
+	font-weight: 100 
+	line-height: 24px 
+	color: #ffffff 
+
+.subheader__call-to-us 
+	margin-top: 21px 
+	margin-right: 5px 
+	font-size: 12px 
+	font-weight: 300 
+	color: #ffffff 
+	text-align: right 
+
+.subheader__tel 
+	a 
+		font-size: 22px 
+		text-transform: uppercase 
+		color: #ffffff 
+		display: block 
+		margin-top: 7px 
+		margin-left: 5px 
+		text-align: right 
+
+.subheader__button 
+	margin-top: 18px 
+	margin-left: 5px 
+	a 
+		button 
+			box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2) 
+			font-size: 14px 
+			text-transform: uppercase 
+			color: #ffffff 
+			width: 173px 
+			height: 48px 
+			background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%) 
+			border-radius: 5px 
+			+btn_hover
+
+
+//Promo 
+
+.promo 
+		position: relative 
+		padding-bottom: 130px 
+		min-height: 100vh
+
+.promo__backround-flex 
+	display: flex 
+	position: absolute 
+	width: 100% 
+	height: 100% 
+	top: 0 
+	left: 0 
+	z-index: -1 
+	overflow: hidden 
+	img 
+		width: 100% 
+		height: 100% 
+		object-fit: cover 
+		position: absolute 
+		top: 0 
+		left: 0 
+
+.promo__flex-image 
+	flex: 0 0 100% 
+	position: relative 
+
+.promo__header 
+	margin-top: 200px 
+	text-align: center 
+	font-size: 60px 
+	font-weight: 900 
+	text-transform: uppercase 
+	color: #ffffff 
+
+.promo__subheader 
+	font-size: 36px 
+	line-height: 28px 
+	font-weight: 700 
+	text-transform: uppercase 
+	color: #ffffff 
+	text-align: center 
+	margin-top: 10px
+
+.promo__text 
+	margin-top: 83px 
+	font-size: 18px 
+	line-height: 24px 
+	font-weight: 400 
+	color: #ffffff 
+	text-align: center 
+
+.more
+	margin-top: 30px
+
+.promo__button 
+	margin-top: 116px 
+	text-align: center 
+	button 
+		width: 265px 
+		height: 69px 
+		background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%) 
+		box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2) 
+		font-size: 18px 
+		line-height: 68px 
+		text-transform: uppercase 
+		color: #ffffff 
+		border-radius: 5px
+		+btn_hover
+
+
+
+//adventeges 
+
+.adventeges 
+	padding-top: 71px 
+	padding-bottom: 68px 
+	&__info-block
+		margin-top: 40px
+
+
+.adventeges__flex 
+	margin-top: 6px 
+	margin-left: 25px 
+	display: flex 
+
+.adventeges__flex-img 
+	flex: 0 0 113px 
+	display: flex 
+	height: 113px 
+	background-color: $main-clr 
+	border-radius: 100% 
+	justify-content: center 
+	align-items: center
+
+
+.adventeges__flex-text 
+	margin-left: 25px 
+	margin-top: 16px 
+	h3 
+		margin-top: 3px 
+		font-size: 17px 
+		line-height: 20px 
+		color: $main-clr
+		margin-bottom: 0 
+	p 
+		font-size: 15px 
+		font-weight: 300 
+		line-height: 21px 
+		color: #202020 
+
+
+.mobile
+	padding: 48px 0px 80px 0px
+	min-height: 864px
+	background: url("../img/bacground/bg_net.png") 0 0 repeat
+	.row
+		margin-top: 32px
+	&__item
+		padding-top: 91px
+		padding-bottom: 25px
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		&_1
+			background: url('../img/galery-pic/phone1.png') 0 0 no-repeat
+		&_2
+			background: url("../img/galery-pic/phone2.png") 0 0 no-repeat
+		&_3
+			background: url("../img/galery-pic/phone3.png") 0 0 no-repeat
+		&_4
+			background: url("../img/galery-pic/phone4.png") 0 0 no-repeat
+		&_5
+			background: url("../img/galery-pic/phone5.png") 0 0 no-repeat
+		&_6
+			background: url("../img/galery-pic/phone6.png") 0 0 no-repeat
+	&__item-subtitle
+		font-size: 24px
+		line-height: 31px
+		text-transform: uppercase
+		color: #ffffff
+		text-align: center
+	&__item-plus
+		width: 26px
+		height: 26px
+		background-color: #000000
+		border-radius: 100%
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		cursor: pointer
+		&:before
+			content: ""
+			display: block
+			width: 14px
+			height: 2px
+			background-color: $main-clr
+			transition: all 0.5s
+		&::after
+			content: ""
+			position: absolute
+			display: block
+			width: 2px
+			height: 14px
+			background-color: $main-clr
+			transition: all 0.5s
+		&:hover
+			&:before, &:after
+				transition: all 0.5s
+				background-color: $second-clr
+			
+
+
+
+//section choise
+
+.choice
+	display: flex
+	flex-direction: column
+	position: relative
+	&__up
+		background-color: #000000
+		min-height: 499px
+	&__down
+		background: url("../img/bacground/bg_net.png") 0 0 repeat
+		min-height: 397px
+	&__info
+		display: flex
+		flex-direction: column
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		text-align: center
+		
+
+.info
+	&__button
+		margin-top: 57px
+		background-color: #ffffff
+		color: #000000
+	&__title
+		color: #ffffff
+		margin-top: 32px
+	&__subtitle
+		color: #ffffff
+		margin-top: 19px
+	&__img
+		margin-top: 56px
+		img
+			max-width: 100%
+	&__caption
+		font-size: 17px
+		line-height: 24px
+		font-weight: 300
+		color: #222222
+
+
+//section requare
+
+
+.requare
+	padding: 68px 0px 84px 0px
+	&__title
+		margin-top: 33px
+		margin-bottom: 20px
+		font-size: 22px
+		line-height: 24px
+		color: $main-clr
+		
+	.another-color
+		color: $second-clr
+
+	&__condition
+		font-size: 17px
+		font-weight: 300
+		color: #222222
+		line-height: 24px
+		margin-bottom: 5px
+		margin-left: 18px
+		padding-left: 29px
+		position: relative
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 3px
+			left: 0
+			width: 21px
+			height: 20px
+			background: url('../img/pngIcon/ok_blue.png') 0 0 no-repeat
+
+	&__condition.add
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 3px
+			left: 0
+			width: 21px
+			height: 20px
+			background: url('../img/pngIcon/ok_red.png') 0 0 no-repeat
+
+	&__benefit
+		font-size: 17px
+		line-height: 24px
+		color: $main-clr
+
+
+
+.map
+	.container
+		height: 100%
+	padding: 49px 0
+	position: relative
+	height: 100vh
+	&__img
+		display: flex
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		div
+			flex: 0 0 100%
+			position: relative
+			width: 100%
+			img
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				object-fit: cover
+	&__flex
+		height: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+
+
+.mapflex
+	&__button
+		background-color: #ffffff
+		color: #000000
+	&__title
+		color: #ffffff
+	&__subtitle
+		color: #ffffff
+	&__down-text
+		font-size: 15px
+		text-transform: uppercase
+		color: #1fbad6
+		cursor: pointer
+
+
+.footer
+	padding: 14px 0 39px 0
+	&__flex-line
+		display: flex
+		justify-content: center
+	&__flex
+		padding-top: 15px
+		display: flex
+		justify-content: space-between
+		width: 95%
+		margin: 0 auto
+		&__item-flex1
+			flex: 1 1 33.333%
+			display: flex
+			justify-content: flex-start
+		&__item-flex2
+			flex: 1 0 400px
+			display: flex
+			justify-content: center
+		&__item-flex3
+			flex: 1 1 33.333%
+			display: flex
+			justify-content: flex-end
+		&__item-flex
+			&__text-icon
+				margin-right: 10px
+				display: flex
+				justify-content: center
+				align-items: center
+				color: #ffffff
+				background-color: #000000
+				width: 32px
+				height: 32px
+				border-radius: 100%
+				&:last-child
+					margin-right: 0px
+			&-container
+				flex: 1 1 100px
+				display: flex
+				flex-direction: column
+				align-items: space-between
+			&__footer-line
+				width: 299px 
+				height: 4px
+				background-color: #1fbad6
+			&__big-text-flex
+				margin-top: 0px
+				display: flex
+				justify-content: space-between
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+				color: #070716
+				padding: 0 15px
+			&__meadle-text-flex
+				display: flex
+				margin-top: 15px
+				justify-content: space-between
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+				color: #999999
+			&__language-flex
+				display: flex
+				justify-content: center
+				font-size: 11px
+				text-transform: uppercase
+				color: #1fbad6
+				margin-top: 25px
+		&__item-flex
+			margin-top: 20px
+			&__img
+				margin-right: 9px
+				&:last-child
+					margin-right: 0px
+
+
+.footer-line
+	height: 8px
+	background-color: #070716
+
+@media (max-width: 1200px)
+	.menu-item
+		padding-right: 14px
+	
+	.subheader__tel a
+		font-size: 18px
+	.mobile__item
+
+		padding-top: 91px
+		padding-bottom: 25px
+		width: 280px
+
+	.footer__flex__item-flex3
+		flex: 1 1 33.333%
+		display: flex
+		align-items: flex-end
+		flex-direction: column	
+
+	.footer__flex__item-flex__img 
+		margin-right: 0px
+
+	.subheader__call-to-us 
+		font-size: 11px
+
+	.promo__header
+		font-size: 37px
+	
+	.promo__subheader
+		font-size: 28px
+		line-height: 54px
+
+
+@media (max-width: 992px)
+	.menu
+		padding: 0px 53px
+	.menu-item
+		padding-right: 13px	
+	.promo__subheader
+		line-height: 35px
+	.promo__text
+		margin-top: 36px
+	.menu-link
+		font-size: 12px
+	.mobile__item
+		width: 222px
+		height: 231px
+		padding-top: 53px
+	.adventeges__flex
+		flex-direction: column
+		align-items: center
+	.adventeges__flex-img
+		width: 113px
+	.adventeges__flex-text h3
+		text-align: center
+	.adventeges__flex-text p
+		padding-top: 10px
+	.black-subtitle 
+		margin-top: 35px
+		font-size: 32px
+
+@media (max-width: 768px)
+	nav
+		position: relative
+		.burger
+			position: absolute
+			top: 15px
+			right: 24px
+			width: 30px
+			height: 20px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			&__item
+				width: 30px
+				height: 2px
+				background-color: #ffffff
+				&:nth-last-child(1)
+				&:nth-last-child(2)
+				&:nth-last-child(3)
+	.menu
+		top: 0
+		left: 0
+		position: absolute
+		width: 50%
+		height: 100vh
+		background-color: #000000c6
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.menu-link 
+		text-align: center
+		font-size: 24px
+		display: block
+		margin-top: 35px
+	.menu-item
+		border-right: none
+		padding: 0
+
+	.footer__flex
+		flex-direction: column
+		align-items: center
+		
+	.footer__flex__item-flex2
+		flex: 0 0 auto
+	.footer__flex__item-flex__img
+		margin-bottom: 8px
