@@ -1,0 +1,5 @@
+@meadia (max-width: 1200) {
+  .menu-item {
+    padding-right: 25px;
+  }
+}

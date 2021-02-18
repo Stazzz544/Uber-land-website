@@ -571,6 +571,13 @@ header nav {
   cursor: pointer;
 }
 
+.footer {
+  padding: 14px 0 39px 0;
+}
+.footer__flex-line {
+  display: flex;
+  justify-content: center;
+}
 .footer__flex {
   padding-top: 15px;
   display: flex;
@@ -580,6 +587,7 @@ header nav {
   margin: 0 auto;
 }
 .footer__flex__item-flex {
+  flex: 1 1 33.333%;
   display: flex;
 }
 .footer__flex__item-flex__text-icon {
