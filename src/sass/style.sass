@@ -607,8 +607,9 @@ header
 	
 	.subheader__tel a
 		font-size: 18px
-	.mobile__item
 
+	
+	.mobile__item
 		padding-top: 91px
 		padding-bottom: 25px
 		width: 280px
@@ -662,27 +663,40 @@ header
 		font-size: 32px
 
 @media (max-width: 768px)
+	.choice__down
+		min-height: 268px
 	nav
 		position: relative
 		.burger
 			position: absolute
-			top: 15px
-			right: 24px
+			top: 43%
+			transform: translateY(-50%)
+			right: 35px
 			width: 30px
-			height: 20px
-			display: flex
-			flex-direction: column
-			justify-content: space-between
 			&__item
-				width: 30px
+				display: block
+				width: 100%
 				height: 2px
 				background-color: #ffffff
+				transition: all 0.3s
+				margin-top: 7px
+		.burger_active
+			top: 36%
+			.burger__item
+				margin-bottom: -9px
 				&:nth-last-child(1)
+					transform: rotate(-45deg)
+					transition:  all 0.3s
 				&:nth-last-child(2)
+					display: none
+					transition:  all 1s
 				&:nth-last-child(3)
+					transform: rotate(45deg)
+					transition:  all 0.3s
 	.menu
+		display: flex
 		top: 0
-		left: 0
+		left: -100%
 		position: absolute
 		width: 50%
 		height: 100vh
@@ -690,6 +704,11 @@ header
 		flex-direction: column
 		justify-content: center
 		align-items: center
+		transition: all 1s
+	.menu_active
+		top: 0
+		left: 0
+		transition: all 1s
 	.menu-link 
 		text-align: center
 		font-size: 24px
@@ -707,3 +726,49 @@ header
 		flex: 0 0 auto
 	.footer__flex__item-flex__img
 		margin-bottom: 8px
+	.subheader__logo-place span
+		font-size: 21px
+	.subheader__button a button
+		width: 134px
+	.subheader__tel a
+		font-size: 16px
+	.footer__flex__item-flex2
+		width: 370px
+@media (max-width: 576px)
+	.choice__down
+		min-height: 268px
+	.info__img 
+		margin-top: 107px
+	.subheader__oficial
+		display: none
+	.subheader__flex
+		justify-content: center
+	.subheader
+		padding-bottom: 10px
+	.promo__header 
+		font-size: 28px
+	.promo__subheader 
+		font-size: 20px
+	.adventeges__flex
+		margin-left: 0px
+		margin-top: 35px
+
+@media (max-width: 410px)
+	.footer__flex__item-flex__big-text-flex
+		flex-direction: column
+		align-items: center
+		margin-top: 15px
+	.footer__flex__item-flex__big-text
+		margin-top: 10px
+	.footer__flex__item-flex__meadle-text-flex
+		flex-direction: column
+		align-items: center
+		margin-top: 20px
+	.footer__flex__item-flex__meadle-text
+		margin-top: 15px
+	.footer__flex__item-flex3
+		margin-top: 35px
+	.footer__flex__item-flex2 
+	width: 300px
+	.choice__down
+		min-height: 157px
